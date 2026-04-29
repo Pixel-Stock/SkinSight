@@ -1,0 +1,17 @@
+Task: acne
+Device: cpu
+Classes: ['level0', 'level1', 'level2', 'level3']
+Split sizes: train=1019 val=219 test=219
+Chosen hyperparams: {'lr': 0.00015, 'epochs': 8}
+Test accuracy: 0.6895
+Confusion matrix (rows=true, cols=pred):
+     60    11     0     0
+     27    62     8     2
+      0    10    18     5
+      0     0     5    11
+Per-class precision/recall/F1:
+  level0: P=0.690 R=0.845 F1=0.759 support=71
+  level1: P=0.747 R=0.626 F1=0.681 support=99
+  level2: P=0.581 R=0.545 F1=0.562 support=33
+  level3: P=0.611 R=0.688 F1=0.647 support=16
+Macro avg F1: 0.663 | Weighted avg F1: 0.686
